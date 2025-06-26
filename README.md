@@ -43,5 +43,21 @@ Releases only contain the client and the cosmic wz files. The setup/installer is
 ### Troubleshooting
 The client sometimes has trouble starting. If you see "Client connected (...)" in the server logs, but the client doesn't boot up or shows an error message, try spam double-clicking the client. If you're in luck, at least one client will start successfully.
 
+## Client editing
+
+### Client customizations
+For more information about the client and its features, see [HeavenMS on GitHub](https://github.com/ronancpl/HeavenMS#download-items).
+
+Some notable features:
+* Opens in window mode by default
+* Uncapped max speed
+
+### Edit client ip
+1. Download and install a hex editor: [HxD](https://mh-nexus.de/en/hxd/)
+2. Start HxD and open your client exe (I recommend making a copy of it first). At this point you should see a bunch of hex codes and a "Decoded text" column to the right of it.
+3. Ctrl+f and search for Text-string "127.0.0.1". You should find three occurrences right above each other.
+4. Place your cursor before the first "127" and start typing the desired ip, overwriting what is already there. Do the same on the other two and click on Save.
+5. Done! Now the client will attempt to connect to that ip address instead when you launch it.
+
 
 
